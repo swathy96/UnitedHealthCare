@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('icon.css');
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #F9F9F9;
+}
+label{
+    color: #9E9E9E;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height:22px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
+}
+h1{
+    color: #1d4182;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+}
+.text-center{
+    text-align: center;
+} 
+.form-control{
+    color: #333;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    height: 45px;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.btn{
+    color: #333;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    min-width: 150px;
+    background-color: #EDEDED;
+    border-radius: 3px;
+}
+.btn.btn-primary{
+    color: #fff;
+    background-color: #1d4182;
+}
+.btn.btn-text{
+    background-color: transparent;
+    text-transform: capitalize;
+}
+.btn.btn-text-primary{
+    color: #1d4182;
+    text-transform: capitalize;  
+    background-color: transparent; 
+}
+.form-group{
+    margin-bottom: 20px;
+    display: block;
+}
+.icon-text-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.icon-text-section .icon{
+    flex: 0 0 70px;
+    max-width: 70px;
+}
+.icon-text-section .text{
+    flex: 0 0 calc(100% - 70px);
+    max-width : calc(100% - 70px);
+}
+.h-form-style{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.h-form-style label{
+    flex: 0 0 35%;
+    text-align: left;
+    padding: 0 15px;
+    max-width: 35%;
+}
+.h-form-style .form-control{
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+.row-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row-group .col{
+    flex-grow:0;
+    flex-shrink:0;
+    flex-basis: auto;
+}
+.star-group{
+    background-color: #1d4182;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.star-group span{
+    color: #fff;
+    font-size: 13px;
+}
+.star-group .icon-star {
+    font-size: 12px;
+}
+.ibox_pj-dropdown-click{
+    color: #C7C7C7;
+    font-size: 26px;
+    text-decoration: none;
+}
+.ibox_pj-dropdown-click.active{
+    color: #1d4182;
+}
+.ibox_pj-dropdown .ibox_pj-dropdown-menu {
+    display: none;
+    width: 220px;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+    float: left;
+    min-width: 160px; 
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+}
+
+.ibox_pj-dropdown .ibox_pj-dropdown-menu.view {
+    display: block;
+}
+
+.ibox_pj-dropdown .ibox_pj-dropdown-menu li>a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.login-wrapper{
+    background-color: #1d4182;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 100vh;
+    background-image: url(../images/login-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-form{
+    max-width:70%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+.login-form .login-logo{
+    max-width: 120px;
+    margin: 0 auto 20px auto;
+}
+.login-form h1{   
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-form .form-card{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.login-form .form-card .form-group{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.login-form .btn-section{
+    margin-top: 20px;
+}
+.patient-login{   
+    max-width: 450px;
+}
+
+.patient-login .form-card .form-group{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.top-header{
+    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.top-header .logo{
+    width: 106px;
+}
+.main-wrapper{
+    background-color: #f2f2f2;
+}
+.main-wrapper::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.main-wrapper .left-wrapper, .main-wrapper .right-wrapper{
+    float: left;
+    display: block;
+    position: relative;
+    min-height: 1px;
+    height: calc(100vh - 55px);
+}
+
+.main-wrapper .left-wrapper{
+    height: 100vh;
+    width: 220px;
+    background-color:#1d3557;
+}
+.main-wrapper .right-wrapper{
+    width: calc(100% - 220px);
+}
+
+.patient-details{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.patient-details .user-img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.patient-details .user-img img{
+    max-width: 100%;
+}
+.patient-details .user-detail h6{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.patient-details .user-detail .label-text{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.patient-details .user-detail .btn-link{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+}
+.link-wrapper{
+}
+.link-wrapper ul li{
+    border-bottom: 1px solid #1d4182;
+}
+.link-wrapper ul li:first-child{
+    border-top: 1px solid #1d4182;
+}
+.link-wrapper ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+.link-wrapper ul li.active a{
+    background-color: #1d4182;
+}
+.right-wrapper .top-head{
+    
+}
+.right-wrapper .top-head {
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.right-wrapper .top-head h1{
+    color: #727272;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+}
+
+.doctor-wrapper{
+    padding:15px 20px;
+}
+
+.doctor-wrapper .fliter-wrapper .form-group{
+    width: 33.333%;
+}
+.doctor-wrapper .fliter-wrapper .form-group .form-control{
+    background-color: #fff;
+}
+.flexbox-group{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.flexbox-group .flex{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.box-card{
+    background-color: #fff;
+    padding: 15px;
+    display: block;
+}
+.box-card .img-wrapper{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.box-card .doctor-name{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.box-card .btn-section{
+    text-align: center;
+}
+.box-card .btn-section .btn{
+    font-size: 12px;
+    padding: 4px 10px;
+}
+.card-lists{
+    list-style: none;
+    margin-top: 20px;
+}
+.card-lists li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.card-lists li span{
+    float: left;
+    margin-right: 10px;
+}
+
+
+.doctor-appointment{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.doctor-appointment{}
+.doctor-appointment .doctor-details{
+    margin-top: 20px;
+}
+.doctor-appointment h2{
+    font-size: 18px;
+    color: #353535;
+}
+.doctor-appointment .doctor-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.doctor-appointment .doctor-details .image-wrapper{
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0 10px 1px #e0e0e0;
+}
+.doctor-appointment .form-group{
+    max-width: 400px;
+}
+.doctor-appointment .doctor-details .doctor-content{
+    flex: 0 0 calc(100% - 100px);
+    padding-top: 30px;
+    padding-left:15px;
+}
+.time-group{
+    align-content: center;
+    align-items: center;
+}
+.time-group .time{
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+.time-group .time.active{
+    background-color: #d8e9ff;
+    border: 1px solid #d8e9ff;
+}
+.time-group .time.active span{
+    color: #000;
+}
+.time-group .time span{
+    color: #9c9c9c;
+}
+.time-group .time .label{
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    display: block;
+    font-size: 13px;
+    padding: 5px 0; 
+    width: 100%;
+}
+.doctor-appointment .btn-section{
+    margin-top: 30px;
+}
+.my-appointment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.appointment-history{
+    margin-bottom: 30px;
+}
+.appointment-history .flex{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+.appointment-history .box-card{
+    border-radius: 5px;
+}
+.appointment-history .box-card p{
+    color: #4d4d4d;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.appointment-history .box-card p.name{
+    color: #000;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.appointment-history .box-card .btn {
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+.appointment-history.upcoming .box-card{
+    background-color: #cfdee7;
+}
+.appointment-history.upcoming .box-card .btn {
+    background-color: #a0a0a0;
+}
+.appointment-history.old .box-card{
+    background-color: #f4edae;
+}
+.appointment-history.cancel .box-card{
+    background-color: #d3d3d3;
+}
+.cancel-appointment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cancel-appointment .dr-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cancel-appointment .dr-info .right{
+    padding-top:35px;
+    padding-left:20px;
+}
+.cancel-appointment .dr-info p{
+    margin-bottom: 0;
+}
+.cancel-appointment .card-lists li label{
+    color: #000;
+    font-size: 14px;
+}
+.cancel-appointment .dr-info p.doctor-position{
+    font-size: 11px;
+}
+.cancel-appointment .from-group textarea.form-control{
+    height: 170px;
+}
+.view-prescription{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.view-prescription .flex{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+.view-prescription .flex .box-card{
+    background-color: #f4f4f4;
+}
+.view-prescription .icon-text-section .icon {
+    padding: 15px;
+}
+
+.view-prescription .icon-text-section .text h4{
+    margin-bottom: 5px;
+}
+.view-prescription .icon-text-section .text p{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.prescription-group{
+    margin-bottom: 20px;
+}
+.label-group-with-head{
+    position: relative;
+    margin-bottom: 15px;
+}
+.label-group-with-head .label-lists{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    list-style: none;
+}
+.label-group-with-head .label-lists li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.label-group-with-head .label-lists li label{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 20px;
+}
+.label-group-with-head .label-lists li label.selected{
+    color: #fff;
+    display: inline-block;
+    padding: 1px 10px;
+    background-color: #1d4182;
+}
+
+.left-right-layout:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left-right-layout .left, .left-right-layout .right{
+    position: relative;
+    display: block;
+    min-height: 1px;
+}
+.left-right-layout .left{
+    float: left;
+}
+.left-right-layout .right{
+    float: right;
+}
+.doctor-appointment .left-right-layout .btn-section{
+    margin-top: 0;
+}
+.doctor-appointment .left-right-layout .btn-section .btn{
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+.upload-wrapper{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 70px 20px;
+}
+.upload-wrapper .upload{
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
+    border: 2px dashed #a8a8a8;
+}
+.upload-wrapper .upload img{
+    max-width: 250px;
+    margin: 20px 0;
+}
+.profile-wrapper{
+    padding: 20px;
+    position: relative;
+}
+.profile-wrapper .profile-info{
+    background-color: #fff;
+    padding: 30px;
+}
+.profile-info .user-detail{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.profile-info .user-detail .user-image{
+    flex: 0 0 120px;
+    max-width: 120px;
+}
+.profile-info .user-detail .user-image img{
+    max-width: 100%;
+}
+.user-detail .user-info{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.form-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.form-card .form-group {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.form-card .form-group .label-value {
+    color: #4d4d4d;
+    display: block;
+}
+.profile-info h4{
+    color: #9E9E9E;
+    margin-bottom: 0;
+}
+.doctor-management .box-card .btn-section .btn{
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 40px;
+    min-width: 100px;
+}
+.apply-leave{
+    padding: 20px;
+}
+.leave-creation-wrapper .btn-input-layout{
+    display: flex;
+    align-items: center;
+}
+
+.leave-creation-wrapper .btn-input-layout label{
+    flex: 0 0 120px;
+    max-width: 120px;
+    margin-right: 20px;
+}
+.leave-creation-wrapper .form-control{
+    flex: 0 0 300px;
+    max-width: 300px;
+    margin-right: 20px;
+}
+.apply-leave .card-lists{
+    margin-top: 5px;
+}
+.apply-leave .card-lists li{
+    padding-top: 0;
+}
+.apply-leave .card-lists .label-text{
+    display: block;
+    width: 100%;
+}
